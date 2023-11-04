@@ -37,6 +37,7 @@ struct ProfileSettingsMenuView: View {
                                 
                                 NavigationLink {
                                     AppearanceView()
+                                        .navigationBarBackButtonHidden()
                                 } label: {
                                     ProfileSettingsMenuLabelView(imageName: "gearshape.circle", title: "appearance-option")
                                 }
@@ -44,6 +45,7 @@ struct ProfileSettingsMenuView: View {
                                 
                                 NavigationLink {
                                     AboutView()
+                                        .navigationBarBackButtonHidden()
                                 } label: {
                                     ProfileSettingsMenuLabelView(imageName: "info.circle", title: "about-option")
                                 }

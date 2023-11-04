@@ -8,11 +8,45 @@
 import SwiftUI
 
 struct AboutView: View {
+    @Environment(\.dismiss) var dismiss
+    
     var body: some View {
-        Text("AboutView")
+        ZStack {
+            Color(.feedCellBackground)
+                .ignoresSafeArea()
+            
+            VStack {
+                
+            }
+            .toolbar {
+                ToolbarItem(placement: .topBarLeading) {
+                    Button {
+                        dismiss()
+                    } label: {
+                        Image(systemName: "chevron.left")
+                            .foregroundStyle(.labelsMain)
+                    }
+                }
+                
+                ToolbarItem(placement: .principal) {
+                    Text("About")
+                        .foregroundStyle(.labelsMain)
+                }
+            }
+        }
     }
 }
 
 #Preview {
-    AboutView()
+    NavigationStack {
+        AboutView()
+            .preferredColorScheme(.light)
+    }
+}
+
+#Preview {
+    NavigationStack {
+        AboutView()
+            .preferredColorScheme(.dark)
+    }
 }

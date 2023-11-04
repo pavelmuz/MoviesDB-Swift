@@ -17,21 +17,16 @@ struct NotificationsView: View {
             Color(.feedCellBackground)
                 .ignoresSafeArea()
             
-            VStack {
+            Form {
                 Toggle("Notifications with email", isOn: $emailNotifications)
                     .tint(.labelsMain)
                     .foregroundStyle(.labelsMain)
-                    .font(.headline)
                 
                 
                 Toggle("Push notifications", isOn: $pushNotifications)
                     .tint(.labelsMain)
                     .foregroundStyle(.labelsMain)
-                    .font(.headline)
-                
-                Spacer()
             }
-            .padding(.horizontal)
             .toolbar {
                 ToolbarItem(placement: .topBarLeading) {
                     Button {
