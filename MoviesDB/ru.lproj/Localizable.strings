@@ -1,0 +1,81 @@
+/* 
+  Localizable.strings
+  MoviesDB
+
+  Created by Pavel Muzalevskiy on 09.10.2023.
+  
+*/
+
+
+// Authentication
+"email-field" = "Электронная почта";
+"passford-field" = "Пароль";
+"forgot-password" = "Забыли пароль?";
+"sign-in-button" = "Войти";
+"dont-have-an-account" = "Еще нет аккаунта?";
+"sign-up" = "Зарегистрируйтесь";
+"fullname-field" = "Полное имя";
+"username-field" = "Имя пользователя";
+"confirm-password" = "Подтвердите пароль";
+"sign-up-button" = "Зарегистрироваться";
+"already-have-an-account" = "Уже есть аккаунт?";
+"sign-in" = "Войдите";
+"forgot-password-text" = "Введите адрес электронной почты для получения ссылки на сброс пароля.";
+"reset-password-button" = "Сбросить Пароль";
+
+
+// Feed
+"my-rating" = "Рейтинг:";
+"my-review" = "Обзор: ";
+"likes" = "Нравится:";
+"time-ago" = "6ч назад";
+"feed-name" = "Лента";
+"show-comments-btn" = "Показать все комментарии ";
+
+// Movie View
+
+"movie-year" = "Премьера: ";
+"kinopoisk-button" = "Открыть в Кинопоиск";
+
+// Tabs
+"home" = "Лента";
+"explore" = "Найти";
+"add-movie" = "Добавить";
+"likes-tab" = "Уведомления";
+"profile-tab" = "Профиль";
+
+// Comments
+"comments-title" = "Комментарии";
+"comment-input" = "Добавьте комментарий";
+
+// Explore
+"explore-title" = "Найти";
+"search-input" = "Найти пользователя";
+
+// Profile Tabs
+
+"movies-tab" = "Фильмы";
+"followers-tab" = "Подписчики";
+"following-tab" = "Подписки";
+
+// Profile Settings menu
+
+"settings" = "Настройки";
+"account-option" = "Профиль";
+"notifiactions-option" = "Уведомления";
+"appearance-option" = "Оформление";
+"about-option" = "О приложении";
+"logout-option" = "Выйти из профиля";
+
+
+// Post options menu
+
+"edit-post" = "Изменить";
+"delete-post" = "Удалить";
+
+// Edit post popup
+
+"rating-input" = "Ваш рейтинг";
+"review-input" = "Ваш обзор";
+"save-post" = "Сохранить";
+"cancel-edit" = "Отмена";

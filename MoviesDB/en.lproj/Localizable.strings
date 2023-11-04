@@ -1,0 +1,80 @@
+/* 
+  Localizable.strings
+  MoviesDB
+
+  Created by Pavel Muzalevskiy on 09.10.2023.
+  
+*/
+
+
+// Authentication
+"email-field" = "Email";
+"passford-field" = "Password";
+"forgot-password" = "Forgot password?";
+"sign-in-button" = "Sign In";
+"dont-have-an-account" = "Don't have an account?";
+"sign-up" = "Sign Up";
+"fullname-field" = "Fullname";
+"username-field" = "Username";
+"confirm-password" = "Confirm password";
+"sign-up-button" = "Sign Up";
+"already-have-an-account" = "Already have an account?";
+"sign-in" = "Sign In";
+"forgot-password-text" = "Enter your email and we will send you a link to reset password.";
+"reset-password-button" = "Reset Password";
+
+// Feed
+"my-rating" = "Rating:";
+"my-review" = "Review: ";
+"likes" = "Likes:";
+"time-ago" = "6h ago";
+"feed-name" = "Feed";
+"show-comments-btn" = "Show all comments ";
+
+// Movie View
+
+"movie-year" = "Year: ";
+"kinopoisk-button" = "Open in Kinopoisk";
+
+// Tabs
+"home" = "Feed";
+"explore" = "Explore";
+"add-movie" = "Add";
+"likes-tab" = "Likes";
+"profile-tab" = "Profile";
+
+// Comments
+"comments-title" = "Comments";
+"comment-input" = "Add comment";
+
+// Explore
+"explore-title" = "Explore";
+"search-input" = "Find user";
+
+// Profile Tabs
+
+"movies-tab" = "Movies";
+"followers-tab" = "Followers";
+"following-tab" = "Following";
+
+// Profile Settings menu
+
+"settings" = "Settings";
+"account-option" = "Account";
+"notifiactions-option" = "Notifications";
+"appearance-option" = "Appearance";
+"about-option" = "About";
+"logout-option" = "Logout";
+
+// Post options menu
+
+"edit-post" = "Edit Post";
+"delete-post" = "Delete";
+
+// Edit post popup
+
+"rating-input" = "Your rating";
+"review-input" = "Your review";
+"save-post" = "Save";
+"cancel-edit" = "Cancel";
+
