@@ -73,8 +73,8 @@ struct EditPostView: View {
         }
         .frame(width: device == .phone ? 300 : 500)
         .frame(minHeight: 300)
-        .background(.feedCellBackground)
-        .clipShape(RoundedRectangle(cornerRadius: 8))
+        .background(.cellBackground)
+        .clipShape(RoundedRectangle(cornerRadius: 10))
         .overlay {
             RoundedRectangle(cornerRadius: 8)
                 .stroke(lineWidth: 0.5)

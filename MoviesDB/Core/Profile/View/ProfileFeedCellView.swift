@@ -15,10 +15,8 @@ struct ProfileFeedCellView: View {
     
     var body: some View {
         ZStack {
-            Color(.feedCellBackground)
+            Color(.cellBackground)
                 .clipShape(RoundedRectangle(cornerRadius: 10))
-                .opacity(0.8)
-                .padding(.horizontal, 7)
             
             VStack(alignment: .leading) {
                 
@@ -31,10 +29,10 @@ struct ProfileFeedCellView: View {
                         .clipShape(RoundedRectangle(cornerRadius: 8))
                     
                     VStack(alignment: .leading) {
-                        HStack {
+                        HStack(alignment: .top) {
                             Text(movie.title)
                                 .font(.title)
-                            .fontWeight(.semibold)
+                                .fontWeight(.semibold)
                             
                             Spacer()
                             
@@ -46,6 +44,7 @@ struct ProfileFeedCellView: View {
                                     .scaledToFit()
                                     .frame(width: 30)
                             }
+                            .padding(.top, 7)
                         }
                         
                         HStack {
@@ -124,8 +123,8 @@ struct ProfileFeedCellView: View {
                         .font(.footnote)
                     }
                 }
-                Divider()
             }
+            .padding(.horizontal, 10)
             .sheet(isPresented: $showComments, content: {
                 CommentsView()
                     .presentationDetents([.fraction(0.8)])
@@ -142,7 +141,7 @@ struct ProfileFeedCellView: View {
                     
                     ProfileFeedCellPopoverView(showEditPost: $showEditPost, showPostOptions: $showPostOptions)
                         .frame(width: 150, height: 80)
-                        .background(.feedCellBackground)
+                        .background(.cellBackground)
                         .clipShape(RoundedRectangle(cornerRadius: 8))
                         .overlay {
                             RoundedRectangle(cornerRadius: 8)
@@ -152,7 +151,7 @@ struct ProfileFeedCellView: View {
                         .padding(.bottom, 140)
                 }
                 .padding(.trailing, 20)
-            }            
+            }
         }
     }
 }

@@ -15,7 +15,7 @@ struct AppearanceView: View {
     
     var body: some View {
         ZStack {
-            Color(.feedCellBackground)
+            Color(.cellBackground)
                 .ignoresSafeArea()
             
             Form {
@@ -42,6 +42,7 @@ struct AppearanceView: View {
                 
                 ToolbarItem(placement: .principal) {
                     Text("Appearance")
+                        .font(.headline)
                         .foregroundStyle(.labelsMain)
                 }
             }

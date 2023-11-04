@@ -13,7 +13,7 @@ struct ExploreView: View {
     var body: some View {
         NavigationStack {
             ZStack {
-                Color(.feedCellBackground)
+                Color(.cellBackground)
                     .ignoresSafeArea()
                 
                 VStack {

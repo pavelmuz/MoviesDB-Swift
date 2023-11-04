@@ -17,9 +17,8 @@ struct FeedCell: View {
     
     var body: some View {
         ZStack {
-            Color(.feedCellBackground)
+            Color(.cellBackground)
                 .clipShape(RoundedRectangle(cornerRadius: 10))
-                .opacity(0.8)
                 .padding(.horizontal, 7)
             
             VStack(alignment: .leading) {

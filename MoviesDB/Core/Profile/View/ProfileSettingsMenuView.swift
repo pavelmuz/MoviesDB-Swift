@@ -66,7 +66,7 @@ struct ProfileSettingsMenuView: View {
                     }
                     .padding(.leading, 30)
                     .padding(.top, 20)
-                    .background(.feedCellBackground)
+                    .background(.cellBackground)
                     .frame(width: proxy.size.width, height: 270)
                     .clipShape(SideMenuShape(device: device))
                     .overlay {
@@ -91,6 +91,7 @@ struct ProfileSettingsMenuView: View {
                                 
                                 NavigationLink {
                                     NotificationsView()
+                                        .navigationBarBackButtonHidden()
                                 } label: {
                                     ProfileSettingsMenuLabelView(imageName: "bell.circle", title: "notifiactions-option")
                                 }
@@ -98,6 +99,7 @@ struct ProfileSettingsMenuView: View {
                                 
                                 NavigationLink {
                                     AppearanceView()
+                                        .navigationBarBackButtonHidden()
                                 } label: {
                                     ProfileSettingsMenuLabelView(imageName: "gearshape.circle", title: "appearance-option")
                                 }
@@ -105,6 +107,7 @@ struct ProfileSettingsMenuView: View {
                                 
                                 NavigationLink {
                                     AboutView()
+                                        .navigationBarBackButtonHidden()
                                 } label: {
                                     ProfileSettingsMenuLabelView(imageName: "info.circle", title: "about-option")
                                 }
@@ -125,7 +128,7 @@ struct ProfileSettingsMenuView: View {
                     }
                     .padding(.leading, 30)
                     .padding(.top, 20)
-                    .background(.feedCellBackground)
+                    .background(.cellBackground)
                     .frame(width: 250, height: proxy.size.height)
                     .clipShape(SideMenuShape(device: device))
                     .overlay {

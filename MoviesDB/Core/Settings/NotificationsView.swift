@@ -14,7 +14,7 @@ struct NotificationsView: View {
     
     var body: some View {
         ZStack {
-            Color(.feedCellBackground)
+            Color(.cellBackground)
                 .ignoresSafeArea()
             
             Form {
@@ -39,6 +39,7 @@ struct NotificationsView: View {
                 
                 ToolbarItem(placement: .principal) {
                     Text("Notifications")
+                        .font(.headline)
                         .foregroundStyle(.labelsMain)
                 }
             }

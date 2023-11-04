@@ -11,10 +11,11 @@ struct AccountView: View {
     @State private var username = ""
     @State private var fullname = ""
     @Environment(\.dismiss) var dismiss
+    let device = UIDevice.current.userInterfaceIdiom
     
     var body: some View {
         ZStack {
-            Color(.feedCellBackground)
+            Color(.backgroundMain)
                 .ignoresSafeArea()
             
             VStack {
@@ -38,8 +39,12 @@ struct AccountView: View {
                     TextField("Username", text: $username)
                         .padding(10)
                         .frame(height: 30)
-                        .background(.inputBackground)
+                        .background(Color(.systemGray6))
                         .clipShape(RoundedRectangle(cornerRadius: 9))
+                        .overlay {
+                            RoundedRectangle(cornerRadius: 9)
+                                .stroke(.gray, lineWidth: 1)
+                        }
                 }
                 .font(.subheadline)
                 .foregroundStyle(.labelsMain)
@@ -52,30 +57,22 @@ struct AccountView: View {
                     TextField("Fullname", text: $fullname)
                         .padding(10)
                         .frame(height: 30)
-                        .background(.inputBackground)
+                        .background(Color(.systemGray6))
                         .clipShape(RoundedRectangle(cornerRadius: 9))
+                        .overlay {
+                            RoundedRectangle(cornerRadius: 9)
+                                .stroke(.gray, lineWidth: 1)
+                        }
                 }
                 .font(.subheadline)
                 .foregroundStyle(.labelsMain)
                 .padding(.horizontal)
                 .padding(.bottom, 20)
                 
-                Button {
-                    print("DEBUG: Changes saved")
-                    dismiss()
-                } label: {
-                    Text("Save Changes")
-                        .font(.headline)
-                        .fontWeight(.semibold)
-                        .foregroundStyle(.backgroundMain)
-                        .frame(width: 320, height: 40)
-                        .background(.labelsMain)
-                        .clipShape(RoundedRectangle(cornerRadius: 8))
-                }
-                
                 Spacer()
                 
             }
+            .padding(.horizontal, device == .phone ? 1 : 70)
             .toolbar {
                 ToolbarItem(placement: .topBarLeading) {
                     Button {
@@ -89,6 +86,17 @@ struct AccountView: View {
                 ToolbarItem(placement: .principal) {
                     Text("Account Settings")
                         .foregroundStyle(.labelsMain)
+                        .font(.headline)
+                }
+                
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button {
+                        print("DEBUG: Changes saved")
+                        dismiss()
+                    } label: {
+                        Image(systemName: "checkmark")
+                            .foregroundStyle(.labelsMain)
+                    }
                 }
             }
         }

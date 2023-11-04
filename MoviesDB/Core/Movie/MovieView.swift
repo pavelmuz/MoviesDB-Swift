@@ -19,9 +19,8 @@ struct MovieView: View {
             ScrollView {
                 ZStack {
                     // Card background
-                    Color(.feedCellBackground)
+                    Color(.cellBackground)
                         .clipShape(RoundedRectangle(cornerRadius: 10))
-                        .opacity(0.8)
                         .padding(8)
                     
                     
