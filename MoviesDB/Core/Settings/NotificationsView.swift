@@ -18,12 +18,12 @@ struct NotificationsView: View {
                 .ignoresSafeArea()
             
             Form {
-                Toggle("Notifications with email", isOn: $emailNotifications)
+                Toggle("mail-notifications", isOn: $emailNotifications)
                     .tint(.labelsMain)
                     .foregroundStyle(.labelsMain)
                 
                 
-                Toggle("Push notifications", isOn: $pushNotifications)
+                Toggle("push-nitifications", isOn: $pushNotifications)
                     .tint(.labelsMain)
                     .foregroundStyle(.labelsMain)
             }
@@ -38,7 +38,7 @@ struct NotificationsView: View {
                 }
                 
                 ToolbarItem(placement: .principal) {
-                    Text("Notifications")
+                    Text("notifications-title")
                         .font(.headline)
                         .foregroundStyle(.labelsMain)
                 }
@@ -51,6 +51,7 @@ struct NotificationsView: View {
     NavigationStack {
         NotificationsView()
             .preferredColorScheme(.light)
+            .environment(\.locale, .init(identifier: "ru"))
     }
 }
 
@@ -58,5 +59,6 @@ struct NotificationsView: View {
     NavigationStack {
         NotificationsView()
             .preferredColorScheme(.dark)
+            .environment(\.locale, .init(identifier: "en"))
     }
 }

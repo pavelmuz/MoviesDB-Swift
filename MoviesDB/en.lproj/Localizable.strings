@@ -82,3 +82,9 @@
 
 "change-photo-btn" = "Change profile image";
 "account-title" = "Account Settings";
+
+// Notifications View
+
+"notifications-title" = "Notifications";
+"mail-notifications" = "Notifications with email";
+"push-nitifications" = "Push notifications";

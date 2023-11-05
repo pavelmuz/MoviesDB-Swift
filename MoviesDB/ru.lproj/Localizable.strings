@@ -83,3 +83,10 @@
 
 "change-photo-btn" = "Изменить фотографию";
 "account-title" = "Настройки аккаунта";
+
+
+// Notifications View
+
+"notifications-title" = "Уведомления";
+"mail-notifications" = "Уведомления по почте";
+"push-nitifications" = "Push уведомления";
