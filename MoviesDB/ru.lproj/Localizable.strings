@@ -82,7 +82,7 @@
 // Account View
 
 "change-photo-btn" = "Изменить фотографию";
-"account-title" = "Настройки аккаунта";
+"account-title" = "Профиль";
 
 
 // Notifications View
@@ -90,3 +90,14 @@
 "notifications-title" = "Уведомления";
 "mail-notifications" = "Уведомления по почте";
 "push-nitifications" = "Push уведомления";
+
+// Appearance View
+
+"appearance-title" = "Оформление";
+"dark-mode" = "Темный Режим";
+"language-selection" = "Язык";
+
+// About View
+
+"about-title" = "О приложении";
+"about-caption" = "Это приложение создавалось как портфолио проект для освоения SwiftUI, Firebase и других бэкенд сервисов. \n\nВ этом приложении возможно создать свой личный рейтинг кинофильмов и сериалов, а также взаимодейстовать с другими пользователями.";

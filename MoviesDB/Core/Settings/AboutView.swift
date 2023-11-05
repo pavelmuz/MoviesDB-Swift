@@ -16,7 +16,7 @@ struct AboutView: View {
                 .ignoresSafeArea()
             
             VStack {
-                Text("This app was created as a portfolio project to gain experiance in SwiftUI, Firebase and othe back-end services. \n\nIn this app you can create personal rating with Movies and TV Shows, interact with other users.")
+                Text("about-caption")
                     .multilineTextAlignment(.leading)
                     .font(.subheadline)
                     .foregroundStyle(.labelsMain)
@@ -52,7 +52,7 @@ struct AboutView: View {
                 }
                 
                 ToolbarItem(placement: .principal) {
-                    Text("About")
+                    Text("about-title")
                         .font(.headline)
                         .foregroundStyle(.labelsMain)
                 }
@@ -65,6 +65,7 @@ struct AboutView: View {
     NavigationStack {
         AboutView()
             .preferredColorScheme(.light)
+            .environment(\.locale, .init(identifier: "ru"))
     }
 }
 
@@ -72,5 +73,6 @@ struct AboutView: View {
     NavigationStack {
         AboutView()
             .preferredColorScheme(.dark)
+            .environment(\.locale, .init(identifier: "en"))
     }
 }

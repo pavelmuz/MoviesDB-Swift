@@ -19,11 +19,11 @@ struct AppearanceView: View {
                 .ignoresSafeArea()
             
             Form {
-                Toggle("Dark Mode", isOn: $darkMode)
+                Toggle("dark-mode", isOn: $darkMode)
                     .tint(.labelsMain)
                     .foregroundStyle(.labelsMain)
                 
-                Picker("Language", selection: $selectedLanguage) {
+                Picker("language-selection", selection: $selectedLanguage) {
                     ForEach(languages, id: \.self) {
                         Text($0)
                     }
@@ -41,7 +41,7 @@ struct AppearanceView: View {
                 }
                 
                 ToolbarItem(placement: .principal) {
-                    Text("Appearance")
+                    Text("appearance-title")
                         .font(.headline)
                         .foregroundStyle(.labelsMain)
                 }
@@ -54,6 +54,7 @@ struct AppearanceView: View {
     NavigationStack {
         AppearanceView()
             .preferredColorScheme(.light)
+            .environment(\.locale, .init(identifier: "ru"))
     }
 }
 
@@ -61,5 +62,6 @@ struct AppearanceView: View {
     NavigationStack {
         AppearanceView()
             .preferredColorScheme(.dark)
+            .environment(\.locale, .init(identifier: "en"))
     }
 }
