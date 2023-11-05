@@ -78,3 +78,7 @@
 "save-post" = "Save";
 "cancel-edit" = "Cancel";
 
+// Account View
+
+"change-photo-btn" = "Change profile image";
+"account-title" = "Account Settings";

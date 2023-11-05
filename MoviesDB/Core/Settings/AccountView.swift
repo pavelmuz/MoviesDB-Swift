@@ -25,7 +25,7 @@ struct AccountView: View {
                 Button {
                     print("DEBUG: Present photo picker")
                 } label: {
-                    Text("Change profile image")
+                    Text("change-photo-btn")
                         .font(.subheadline)
                         .fontWeight(.semibold)
                         .foregroundStyle(.labelsMain)
@@ -33,10 +33,13 @@ struct AccountView: View {
                 .padding(.bottom, 20)
                 
                 HStack {
-                    Text("Username:")
-                        .frame(width: 80, alignment: .leading)
+                    Image(systemName: "tv.inset.filled")
+                        .resizable()
+                        .font(.headline)
+                        .scaledToFit()
+                        .frame(width: 20, height: 20)
                     
-                    TextField("Username", text: $username)
+                    TextField("username-field", text: $username)
                         .padding(10)
                         .frame(height: 30)
                         .background(Color(.systemGray6))
@@ -51,10 +54,13 @@ struct AccountView: View {
                 .padding(.horizontal)
                 
                 HStack {
-                    Text("Fullname:")
-                        .frame(width: 80, alignment: .leading)
+                    Image(systemName: "person.crop.square")
+                        .resizable()
+                        .font(.headline)
+                        .scaledToFit()
+                        .frame(width: 20, height: 20)
                     
-                    TextField("Fullname", text: $fullname)
+                    TextField("fullname-field", text: $fullname)
                         .padding(10)
                         .frame(height: 30)
                         .background(Color(.systemGray6))
@@ -84,7 +90,7 @@ struct AccountView: View {
                 }
                 
                 ToolbarItem(placement: .principal) {
-                    Text("Account Settings")
+                    Text("account-title")
                         .foregroundStyle(.labelsMain)
                         .font(.headline)
                 }
@@ -107,6 +113,7 @@ struct AccountView: View {
     NavigationStack {
         AccountView()
             .preferredColorScheme(.light)
+            .environment(\.locale, .init(identifier: "ru"))
     }
 }
 
@@ -114,5 +121,6 @@ struct AccountView: View {
     NavigationStack {
         AccountView()
             .preferredColorScheme(.dark)
+            .environment(\.locale, .init(identifier: "en"))
     }
 }

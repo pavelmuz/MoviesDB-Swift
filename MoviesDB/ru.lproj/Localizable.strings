@@ -23,7 +23,6 @@
 "forgot-password-text" = "Введите адрес электронной почты для получения ссылки на сброс пароля.";
 "reset-password-button" = "Сбросить Пароль";
 
-
 // Feed
 "my-rating" = "Рейтинг:";
 "my-review" = "Обзор: ";
@@ -79,3 +78,8 @@
 "review-input" = "Ваш обзор";
 "save-post" = "Сохранить";
 "cancel-edit" = "Отмена";
+
+// Account View
+
+"change-photo-btn" = "Изменить фотографию";
+"account-title" = "Настройки аккаунта";
