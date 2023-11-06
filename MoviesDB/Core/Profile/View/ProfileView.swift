@@ -23,10 +23,6 @@ struct ProfileView: View {
                 Color(.backgroundMain)
                     .ignoresSafeArea()
                 
-//                Color(.feedCellBackground)
-//                    .ignoresSafeArea()
-//                    .opacity(0.8)
-                
                 VStack {
                     // Header
                     HStack(alignment: .top, spacing: 15) {

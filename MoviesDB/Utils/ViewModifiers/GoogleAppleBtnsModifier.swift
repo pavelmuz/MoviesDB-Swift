@@ -12,7 +12,7 @@ struct GoogleAppleBtnsModifier: ViewModifier {
         content
             .scaledToFit()
             .frame(height: 30)
-            .frame(width: 155, height: 40)
+            .frame(width: 72, height: 40)
             .background(.labelsMain)
             .clipShape(RoundedRectangle(cornerRadius: 8))
     }

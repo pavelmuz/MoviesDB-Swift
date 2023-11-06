@@ -25,10 +25,32 @@ struct GoogleAppleBtnsView: View {
                     .resizable()
                     .modifier(GoogleAppleBtnsModifier())
             }
+            
+            Button {
+                print("Sign up with Mail.ru")
+            } label: {
+                Image(.mailru)
+                    .resizable()
+                    .modifier(GoogleAppleBtnsModifier())
+            }
+            
+            Button {
+                print("Sign up with Yandex")
+            } label: {
+                Image(.yandex)
+                    .resizable()
+                    .modifier(GoogleAppleBtnsModifier())
+            }
         }
     }
 }
 
 #Preview {
     GoogleAppleBtnsView()
+        .preferredColorScheme(.dark)
+}
+
+#Preview {
+    GoogleAppleBtnsView()
+        .preferredColorScheme(.light)
 }

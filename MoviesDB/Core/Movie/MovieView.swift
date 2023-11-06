@@ -10,6 +10,7 @@ import SwiftUI
 struct MovieView: View {
     let movie: Movie
     @Environment(\.dismiss) var dismiss
+    let device = UIDevice.current.userInterfaceIdiom
     
     var body: some View {
         ZStack {
@@ -69,6 +70,7 @@ struct MovieView: View {
                 }
                 
             }
+            .padding(.horizontal, device == .phone ? 10 : 90)
             
         }
         .toolbar {
