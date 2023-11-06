@@ -99,3 +99,8 @@
 
 "about-title" = "About";
 "about-caption" = "This app was created as a portfolio project to gain experiance in SwiftUI, Firebase and othe back-end services. \n\nIn this app you can create personal rating with Movies and TV Shows, interact with other users.";
+
+// Follow Btn
+
+"follow" = "Follow";
+"following" = "Following";

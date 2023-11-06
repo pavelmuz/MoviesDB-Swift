@@ -39,6 +39,8 @@
 		307E35382AD3403300C6894C /* GoogleAppleBtnsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307E35372AD3403300C6894C /* GoogleAppleBtnsView.swift */; };
 		307E353A2AD3427100C6894C /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307E35392AD3427100C6894C /* ForgotPasswordView.swift */; };
 		307E353D2AD3538200C6894C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 307E353F2AD3538200C6894C /* Localizable.strings */; };
+		3091DEB72AF8E7A700A13BB8 /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3091DEB62AF8E7A700A13BB8 /* UserProfileView.swift */; };
+		3091DEB92AF8E90F00A13BB8 /* UserFeedCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3091DEB82AF8E90F00A13BB8 /* UserFeedCellView.swift */; };
 		30DAF4252AD1611100C32DC3 /* MoviesDBApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DAF4242AD1611100C32DC3 /* MoviesDBApp.swift */; };
 		30DAF4272AD1611200C32DC3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DAF4262AD1611200C32DC3 /* ContentView.swift */; };
 		30DAF4292AD1611300C32DC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30DAF4282AD1611300C32DC3 /* Assets.xcassets */; };
@@ -85,6 +87,8 @@
 		307E35392AD3427100C6894C /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
 		307E353E2AD3538200C6894C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		307E35402AD353D100C6894C /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3091DEB62AF8E7A700A13BB8 /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
+		3091DEB82AF8E90F00A13BB8 /* UserFeedCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFeedCellView.swift; sourceTree = "<group>"; };
 		30DAF4212AD1611100C32DC3 /* MoviesDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoviesDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30DAF4242AD1611100C32DC3 /* MoviesDBApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesDBApp.swift; sourceTree = "<group>"; };
 		30DAF4262AD1611200C32DC3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -171,6 +175,15 @@
 				307E35352AD33EA200C6894C /* GoogleAppleBtnsModifier.swift */,
 			);
 			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
+		3091DEB52AF8E78000A13BB8 /* UserProfile */ = {
+			isa = PBXGroup;
+			children = (
+				3091DEB62AF8E7A700A13BB8 /* UserProfileView.swift */,
+				3091DEB82AF8E90F00A13BB8 /* UserFeedCellView.swift */,
+			);
+			path = UserProfile;
 			sourceTree = "<group>";
 		};
 		30DAF4182AD1611100C32DC3 = {
@@ -261,6 +274,7 @@
 				30DAF4432AD1638B00C32DC3 /* Root */,
 				307A75C12AE1D0080075C07A /* Settings */,
 				30DAF43E2AD162FF00C32DC3 /* TabBar */,
+				3091DEB52AF8E78000A13BB8 /* UserProfile */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -465,6 +479,7 @@
 				306309142AD88CE8006FDA32 /* CommentCell.swift in Sources */,
 				3008F31B2AE9BEFB00C45EA5 /* SideMenuShape.swift in Sources */,
 				307E35302AD1B79C00C6894C /* AuthFooter.swift in Sources */,
+				3091DEB92AF8E90F00A13BB8 /* UserFeedCellView.swift in Sources */,
 				30DAF4452AD163E900C32DC3 /* FeedView.swift in Sources */,
 				307A75B72ADF311D0075C07A /* ProfileFeedCellView.swift in Sources */,
 				30DAF4272AD1611200C32DC3 /* ContentView.swift in Sources */,
@@ -487,6 +502,7 @@
 				307A75B32ADBE8C80075C07A /* ProfileFilterViewModel.swift in Sources */,
 				307A75BE2AE189760075C07A /* ProfileSettingsMenuView.swift in Sources */,
 				30DAF4472AD163FB00C32DC3 /* ExploreView.swift in Sources */,
+				3091DEB72AF8E7A700A13BB8 /* UserProfileView.swift in Sources */,
 				307E35342AD1F8E800C6894C /* AuthSecureField.swift in Sources */,
 				307E35292AD1B43900C6894C /* TextFieldModifier.swift in Sources */,
 				30DAF4492AD1641100C32DC3 /* AddMovieView.swift in Sources */,

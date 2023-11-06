@@ -41,7 +41,14 @@ struct ExploreView: View {
                     ScrollView {
                         LazyVStack {
                             ForEach(User.MOCK_USERS) { user in
-                                ExploreCellView(user: user)
+                                NavigationLink {
+                                    UserProfileView(user: user)
+                                        .navigationBarBackButtonHidden()
+                                } label: {
+                                    ExploreCellView(user: user)
+                                }
+                                .padding(.trailing, 4)
+
                             }
                             .padding(.vertical, 1)
                         }
