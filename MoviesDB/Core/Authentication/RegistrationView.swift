@@ -69,7 +69,7 @@ struct RegistrationView: View {
                     AuthButton(title: "sign-up-button")
                 }
                 
-                GoogleAppleBtnsView()
+                AuthServicesButtonsView()
             }
             
             

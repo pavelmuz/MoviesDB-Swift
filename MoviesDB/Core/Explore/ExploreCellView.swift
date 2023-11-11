@@ -32,18 +32,7 @@ struct ExploreCellView: View {
                 Button {
                     followed.toggle()
                 } label: {
-                    Text(subscribeTitle)
-                        .font(.subheadline)
-                        .fontWeight(.semibold)
-                        .foregroundStyle(followed ? .cellBackground : .labelsMain)
-                        .frame(width: 140, height: 30)
-                        .background(followed ? .labelsMain : .cellBackground)
-                        .clipShape(RoundedRectangle(cornerRadius: 8))
-                        .overlay {
-                            RoundedRectangle(cornerRadius: 8)
-                                .stroke(lineWidth: 1)
-                                .foregroundStyle(followed ? .cellBackground : .labelsMain)
-                        }
+                    FollowButton(followed: followed, subscribeTitle: subscribeTitle)
                 }
             }
             Divider()

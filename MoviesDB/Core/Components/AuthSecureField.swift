@@ -21,7 +21,7 @@ struct AuthSecureField: View {
                 .frame(width: 20, height: 20)
 
             SecureField(placeholder, text: $text)
-                .modifier(TextFieldModifier())
+                .modifier(AuthInputFieldModifier())
         }
         .foregroundStyle(.labelsMain)
         .padding(.horizontal, 7)

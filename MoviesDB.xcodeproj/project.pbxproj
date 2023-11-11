@@ -29,18 +29,19 @@
 		307A75C72AE1D0580075C07A /* AppearanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307A75C62AE1D0580075C07A /* AppearanceView.swift */; };
 		307A75C92AE1D0680075C07A /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307A75C82AE1D0680075C07A /* AboutView.swift */; };
 		307E35262AD19AE400C6894C /* AuthInputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307E35252AD19AE400C6894C /* AuthInputField.swift */; };
-		307E35292AD1B43900C6894C /* TextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307E35282AD1B43900C6894C /* TextFieldModifier.swift */; };
+		307E35292AD1B43900C6894C /* AuthInputFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307E35282AD1B43900C6894C /* AuthInputFieldModifier.swift */; };
 		307E352B2AD1B66D00C6894C /* AuthButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307E352A2AD1B66D00C6894C /* AuthButton.swift */; };
 		307E352D2AD1B75600C6894C /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307E352C2AD1B75600C6894C /* RegistrationView.swift */; };
 		307E35302AD1B79C00C6894C /* AuthFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307E352F2AD1B79C00C6894C /* AuthFooter.swift */; };
 		307E35322AD1B9A900C6894C /* AuthHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307E35312AD1B9A900C6894C /* AuthHeader.swift */; };
 		307E35342AD1F8E800C6894C /* AuthSecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307E35332AD1F8E800C6894C /* AuthSecureField.swift */; };
-		307E35362AD33EA200C6894C /* GoogleAppleBtnsModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307E35352AD33EA200C6894C /* GoogleAppleBtnsModifier.swift */; };
-		307E35382AD3403300C6894C /* GoogleAppleBtnsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307E35372AD3403300C6894C /* GoogleAppleBtnsView.swift */; };
+		307E35362AD33EA200C6894C /* AuthServicesButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307E35352AD33EA200C6894C /* AuthServicesButtonModifier.swift */; };
+		307E35382AD3403300C6894C /* AuthServicesButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307E35372AD3403300C6894C /* AuthServicesButtonsView.swift */; };
 		307E353A2AD3427100C6894C /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307E35392AD3427100C6894C /* ForgotPasswordView.swift */; };
 		307E353D2AD3538200C6894C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 307E353F2AD3538200C6894C /* Localizable.strings */; };
 		3091DEB72AF8E7A700A13BB8 /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3091DEB62AF8E7A700A13BB8 /* UserProfileView.swift */; };
 		3091DEB92AF8E90F00A13BB8 /* UserFeedCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3091DEB82AF8E90F00A13BB8 /* UserFeedCellView.swift */; };
+		30A9A4C02B00186A0059EB76 /* FollowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A9A4BF2B00186A0059EB76 /* FollowButton.swift */; };
 		30DAF4252AD1611100C32DC3 /* MoviesDBApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DAF4242AD1611100C32DC3 /* MoviesDBApp.swift */; };
 		30DAF4272AD1611200C32DC3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DAF4262AD1611200C32DC3 /* ContentView.swift */; };
 		30DAF4292AD1611300C32DC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30DAF4282AD1611300C32DC3 /* Assets.xcassets */; };
@@ -76,19 +77,20 @@
 		307A75C62AE1D0580075C07A /* AppearanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceView.swift; sourceTree = "<group>"; };
 		307A75C82AE1D0680075C07A /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		307E35252AD19AE400C6894C /* AuthInputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthInputField.swift; sourceTree = "<group>"; };
-		307E35282AD1B43900C6894C /* TextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldModifier.swift; sourceTree = "<group>"; };
+		307E35282AD1B43900C6894C /* AuthInputFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthInputFieldModifier.swift; sourceTree = "<group>"; };
 		307E352A2AD1B66D00C6894C /* AuthButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthButton.swift; sourceTree = "<group>"; };
 		307E352C2AD1B75600C6894C /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		307E352F2AD1B79C00C6894C /* AuthFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthFooter.swift; sourceTree = "<group>"; };
 		307E35312AD1B9A900C6894C /* AuthHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHeader.swift; sourceTree = "<group>"; };
 		307E35332AD1F8E800C6894C /* AuthSecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthSecureField.swift; sourceTree = "<group>"; };
-		307E35352AD33EA200C6894C /* GoogleAppleBtnsModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAppleBtnsModifier.swift; sourceTree = "<group>"; };
-		307E35372AD3403300C6894C /* GoogleAppleBtnsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAppleBtnsView.swift; sourceTree = "<group>"; };
+		307E35352AD33EA200C6894C /* AuthServicesButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServicesButtonModifier.swift; sourceTree = "<group>"; };
+		307E35372AD3403300C6894C /* AuthServicesButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServicesButtonsView.swift; sourceTree = "<group>"; };
 		307E35392AD3427100C6894C /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
 		307E353E2AD3538200C6894C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		307E35402AD353D100C6894C /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3091DEB62AF8E7A700A13BB8 /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
 		3091DEB82AF8E90F00A13BB8 /* UserFeedCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFeedCellView.swift; sourceTree = "<group>"; };
+		30A9A4BF2B00186A0059EB76 /* FollowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowButton.swift; sourceTree = "<group>"; };
 		30DAF4212AD1611100C32DC3 /* MoviesDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoviesDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30DAF4242AD1611100C32DC3 /* MoviesDBApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesDBApp.swift; sourceTree = "<group>"; };
 		30DAF4262AD1611200C32DC3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -146,13 +148,13 @@
 		307A75B12ADBE8880075C07A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3008F31E2AEC58E000C45EA5 /* EditPostView.swift */,
 				30DAF44C2AD1642000C32DC3 /* ProfileView.swift */,
 				307A75B62ADF311D0075C07A /* ProfileFeedCellView.swift */,
+				3008F31C2AEB09DB00C45EA5 /* ProfileFeedCellPopoverView.swift */,
 				307A75BD2AE189760075C07A /* ProfileSettingsMenuView.swift */,
 				307A75BF2AE18D9A0075C07A /* ProfileSettingsMenuLabelView.swift */,
 				3008F31A2AE9BEFB00C45EA5 /* SideMenuShape.swift */,
-				3008F31C2AEB09DB00C45EA5 /* ProfileFeedCellPopoverView.swift */,
-				3008F31E2AEC58E000C45EA5 /* EditPostView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -160,10 +162,10 @@
 		307A75C12AE1D0080075C07A /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				307A75C22AE1D02B0075C07A /* AccountView.swift */,
-				307A75C42AE1D0420075C07A /* NotificationsView.swift */,
-				307A75C62AE1D0580075C07A /* AppearanceView.swift */,
 				307A75C82AE1D0680075C07A /* AboutView.swift */,
+				307A75C22AE1D02B0075C07A /* AccountView.swift */,
+				307A75C62AE1D0580075C07A /* AppearanceView.swift */,
+				307A75C42AE1D0420075C07A /* NotificationsView.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -171,8 +173,8 @@
 		307E35272AD1B3E400C6894C /* ViewModifiers */ = {
 			isa = PBXGroup;
 			children = (
-				307E35282AD1B43900C6894C /* TextFieldModifier.swift */,
-				307E35352AD33EA200C6894C /* GoogleAppleBtnsModifier.swift */,
+				307E35282AD1B43900C6894C /* AuthInputFieldModifier.swift */,
+				307E35352AD33EA200C6894C /* AuthServicesButtonModifier.swift */,
 			);
 			path = ViewModifiers;
 			sourceTree = "<group>";
@@ -180,8 +182,8 @@
 		3091DEB52AF8E78000A13BB8 /* UserProfile */ = {
 			isa = PBXGroup;
 			children = (
-				3091DEB62AF8E7A700A13BB8 /* UserProfileView.swift */,
 				3091DEB82AF8E90F00A13BB8 /* UserFeedCellView.swift */,
+				3091DEB62AF8E7A700A13BB8 /* UserProfileView.swift */,
 			);
 			path = UserProfile;
 			sourceTree = "<group>";
@@ -346,9 +348,10 @@
 				307E35312AD1B9A900C6894C /* AuthHeader.swift */,
 				307E35252AD19AE400C6894C /* AuthInputField.swift */,
 				307E35332AD1F8E800C6894C /* AuthSecureField.swift */,
+				307E35372AD3403300C6894C /* AuthServicesButtonsView.swift */,
 				306309112AD88935006FDA32 /* CircularProfileImageView.swift */,
 				307A75B42ADF301D0075C07A /* FeedCellHeader.swift */,
-				307E35372AD3403300C6894C /* GoogleAppleBtnsView.swift */,
+				30A9A4BF2B00186A0059EB76 /* FollowButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -484,7 +487,7 @@
 				307A75B72ADF311D0075C07A /* ProfileFeedCellView.swift in Sources */,
 				30DAF4272AD1611200C32DC3 /* ContentView.swift in Sources */,
 				307E35262AD19AE400C6894C /* AuthInputField.swift in Sources */,
-				307E35362AD33EA200C6894C /* GoogleAppleBtnsModifier.swift in Sources */,
+				307E35362AD33EA200C6894C /* AuthServicesButtonModifier.swift in Sources */,
 				30DAF4542AD1746F00C32DC3 /* LoginView.swift in Sources */,
 				307E352D2AD1B75600C6894C /* RegistrationView.swift in Sources */,
 				307A75C02AE18D9A0075C07A /* ProfileSettingsMenuLabelView.swift in Sources */,
@@ -492,19 +495,20 @@
 				307A75C32AE1D02B0075C07A /* AccountView.swift in Sources */,
 				307A75C72AE1D0580075C07A /* AppearanceView.swift in Sources */,
 				306309122AD88935006FDA32 /* CircularProfileImageView.swift in Sources */,
+				30A9A4C02B00186A0059EB76 /* FollowButton.swift in Sources */,
 				3008F31D2AEB09DB00C45EA5 /* ProfileFeedCellPopoverView.swift in Sources */,
 				307E353A2AD3427100C6894C /* ForgotPasswordView.swift in Sources */,
 				30DAF4252AD1611100C32DC3 /* MoviesDBApp.swift in Sources */,
 				30DAF4422AD1636B00C32DC3 /* MainTabView.swift in Sources */,
 				307A75C92AE1D0680075C07A /* AboutView.swift in Sources */,
 				30DAF44B2AD1641A00C32DC3 /* LikesView.swift in Sources */,
-				307E35382AD3403300C6894C /* GoogleAppleBtnsView.swift in Sources */,
+				307E35382AD3403300C6894C /* AuthServicesButtonsView.swift in Sources */,
 				307A75B32ADBE8C80075C07A /* ProfileFilterViewModel.swift in Sources */,
 				307A75BE2AE189760075C07A /* ProfileSettingsMenuView.swift in Sources */,
 				30DAF4472AD163FB00C32DC3 /* ExploreView.swift in Sources */,
 				3091DEB72AF8E7A700A13BB8 /* UserProfileView.swift in Sources */,
 				307E35342AD1F8E800C6894C /* AuthSecureField.swift in Sources */,
-				307E35292AD1B43900C6894C /* TextFieldModifier.swift in Sources */,
+				307E35292AD1B43900C6894C /* AuthInputFieldModifier.swift in Sources */,
 				30DAF4492AD1641100C32DC3 /* AddMovieView.swift in Sources */,
 				3063090C2AD5DEBE006FDA32 /* MovieView.swift in Sources */,
 			);

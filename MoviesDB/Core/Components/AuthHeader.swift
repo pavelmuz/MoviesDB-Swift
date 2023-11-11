@@ -13,7 +13,7 @@ struct AuthHeader: View {
             Image(.logo)
                 .resizable()
                 .scaledToFill()
-            .frame(width: 250, height: 250)
+                .frame(width: 250, height: 250)
             
             Text("Movie Base")
                 .font(.largeTitle)

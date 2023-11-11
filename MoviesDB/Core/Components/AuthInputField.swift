@@ -21,7 +21,7 @@ struct AuthInputField: View {
                 .frame(width: 20, height: 20)
             
             TextField(placeholder, text: $text)
-                .modifier(TextFieldModifier())
+                .modifier(AuthInputFieldModifier())
         }
         .foregroundStyle(.labelsMain)
         .padding(.horizontal, 7)

@@ -60,7 +60,7 @@ struct LoginView: View {
                         AuthButton(title: "sign-in-button")
                     }
                     
-                    GoogleAppleBtnsView()
+                    AuthServicesButtonsView()
                 }
                 
                 Spacer()

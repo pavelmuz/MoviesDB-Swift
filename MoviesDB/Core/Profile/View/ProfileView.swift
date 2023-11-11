@@ -97,11 +97,23 @@ struct ProfileView: View {
                                 }
                             } else if selectedFilter == .followers {
                                 ForEach(0...40, id: \.self) { _ in
-                                    ExploreCellView(user: User.MOCK_USERS[1])
+                                    NavigationLink {
+                                        UserProfileView(user: User.MOCK_USERS[1])
+                                            .navigationBarBackButtonHidden()
+                                    } label: {
+                                        ExploreCellView(user: User.MOCK_USERS[1])
+                                    }
+
                                 }
                             } else if selectedFilter == .following {
                                 ForEach(User.MOCK_USERS, id: \.self) { user in
-                                    ExploreCellView(user: user)
+                                    NavigationLink {
+                                        UserProfileView(user: user)
+                                            .navigationBarBackButtonHidden()
+                                    } label: {
+                                        ExploreCellView(user: user)
+                                    }
+
                                 }
                             }
                         }

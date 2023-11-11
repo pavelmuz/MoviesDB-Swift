@@ -1,5 +1,5 @@
 //
-//  GoogleAppleBtnsView.swift
+//  AuthServicesButtonsView.swift
 //  MoviesDB
 //
 //  Created by Pavel Muzalevskiy on 08.10.2023.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct GoogleAppleBtnsView: View {
+struct AuthServicesButtonsView: View {
     var body: some View {
         HStack(spacing: 10) {
             Button {
@@ -15,7 +15,7 @@ struct GoogleAppleBtnsView: View {
             } label: {
                 Image(.google)
                     .resizable()
-                    .modifier(GoogleAppleBtnsModifier())
+                    .modifier(AuthServicesButtonModifier())
             }
             
             Button {
@@ -23,7 +23,7 @@ struct GoogleAppleBtnsView: View {
             } label: {
                 Image(.appleLogo)
                     .resizable()
-                    .modifier(GoogleAppleBtnsModifier())
+                    .modifier(AuthServicesButtonModifier())
             }
             
             Button {
@@ -31,7 +31,7 @@ struct GoogleAppleBtnsView: View {
             } label: {
                 Image(.mailru)
                     .resizable()
-                    .modifier(GoogleAppleBtnsModifier())
+                    .modifier(AuthServicesButtonModifier())
             }
             
             Button {
@@ -39,18 +39,18 @@ struct GoogleAppleBtnsView: View {
             } label: {
                 Image(.yandex)
                     .resizable()
-                    .modifier(GoogleAppleBtnsModifier())
+                    .modifier(AuthServicesButtonModifier())
             }
         }
     }
 }
 
 #Preview {
-    GoogleAppleBtnsView()
+    AuthServicesButtonsView()
         .preferredColorScheme(.dark)
 }
 
 #Preview {
-    GoogleAppleBtnsView()
+    AuthServicesButtonsView()
         .preferredColorScheme(.light)
 }

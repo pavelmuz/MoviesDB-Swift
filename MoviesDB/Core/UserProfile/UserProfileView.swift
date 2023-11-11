@@ -42,17 +42,7 @@ struct UserProfileView: View {
                             Button {
                                 followed.toggle()
                             } label: {
-                                Text(subscribeTitle)
-                                    .font(.subheadline)
-                                    .fontWeight(.semibold)
-                                    .foregroundStyle(followed ? .backgroundMain : .labelsMain)
-                                    .frame(width: 180, height: 27)
-                                    .background(followed ? .labelsMain : .backgroundMain)
-                                    .clipShape(RoundedRectangle(cornerRadius: 8))
-                                    .overlay {
-                                        RoundedRectangle(cornerRadius: 8)
-                                            .stroke(lineWidth: 1)
-                                    }
+                                FollowButton(followed: followed, subscribeTitle: subscribeTitle)
                             }
                         }
                         
@@ -102,11 +92,23 @@ struct UserProfileView: View {
                                 }
                             } else if selectedFilter == .followers {
                                 ForEach(0...40, id: \.self) { _ in
-                                    ExploreCellView(user: User.MOCK_USERS[1])
+                                    NavigationLink {
+                                        UserProfileView(user: User.MOCK_USERS[1])
+                                            .navigationBarBackButtonHidden()
+                                    } label: {
+                                        ExploreCellView(user: User.MOCK_USERS[1])
+                                    }
+
                                 }
                             } else if selectedFilter == .following {
                                 ForEach(User.MOCK_USERS, id: \.self) { user in
-                                    ExploreCellView(user: user)
+                                    NavigationLink {
+                                        UserProfileView(user: user)
+                                            .navigationBarBackButtonHidden()
+                                    } label: {
+                                        ExploreCellView(user: user)
+                                    }
+
                                 }
                             }
                         }
