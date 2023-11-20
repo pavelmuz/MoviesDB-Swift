@@ -18,11 +18,11 @@ struct AddMovieView: View {
                     .ignoresSafeArea()
                 
                 VStack(spacing: 20) {
-                    Text("Add Movie")
+                    Text("add-movie-title")
                         .font(.title2)
                         .foregroundStyle(.labelsMain)
                     
-                    TextField("Search movie", text: $movieTitle)
+                    TextField("search-movie", text: $movieTitle)
                         .font(.headline)
                         .foregroundStyle(.labelsMain )
                         .padding(12)
@@ -36,7 +36,7 @@ struct AddMovieView: View {
                         SearchResultView()
                             .navigationBarBackButtonHidden()
                     } label: {
-                        Text("Search")
+                        Text("search-btn")
                             .font(.headline)
                             .fontWeight(.semibold)
                             .foregroundStyle(.backgroundMain)
@@ -56,9 +56,11 @@ struct AddMovieView: View {
 #Preview {
     AddMovieView()
         .preferredColorScheme(.light)
+        .environment(\.locale, .init(identifier: "ru"))
 }
 
 #Preview {
     AddMovieView()
         .preferredColorScheme(.dark)
+        .environment(\.locale, .init(identifier: "en"))
 }

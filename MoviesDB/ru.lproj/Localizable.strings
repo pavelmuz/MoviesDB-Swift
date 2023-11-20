@@ -106,3 +106,11 @@
 
 "follow" = "Подписаться";
 "following" = "Подписан";
+
+// Add Movie
+
+"add-movie-title" = "Добавить фильм";
+"search-movie" = "Название фильма";
+"search-btn" = "Найти";
+"select-movie" = "Выберите фильм";
+"add-rating-title" = "Добавьте Оценку";

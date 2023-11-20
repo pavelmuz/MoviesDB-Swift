@@ -45,7 +45,7 @@ struct SearchResultView: View {
             }
             
             ToolbarItem(placement: .principal) {
-                Text("Select Movie")
+                Text("select-movie")
                     .font(.headline)
                     .fontWeight(.semibold)
             }
@@ -58,6 +58,7 @@ struct SearchResultView: View {
     NavigationStack {
         SearchResultView()
             .preferredColorScheme(.light)
+            .environment(\.locale, .init(identifier: "ru"))
     }
 }
 
@@ -65,5 +66,6 @@ struct SearchResultView: View {
     NavigationStack {
         SearchResultView()
             .preferredColorScheme(.dark)
+            .environment(\.locale, .init(identifier: "en"))
     }
 }

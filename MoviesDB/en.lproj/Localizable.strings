@@ -104,3 +104,11 @@
 
 "follow" = "Follow";
 "following" = "Following";
+
+// Add Movie
+
+"add-movie-title" = "Add Movie";
+"search-movie" = "Movie title";
+"search-btn" = "Search";
+"select-movie" = "Select Movie";
+"add-rating-title" = "Add Raing";

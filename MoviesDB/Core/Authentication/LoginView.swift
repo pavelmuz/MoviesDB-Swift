@@ -86,9 +86,11 @@ struct LoginView: View {
 #Preview {
     LoginView()
         .environment(\.locale, .init(identifier: "ru"))
+        .preferredColorScheme(.light)
 }
 
 #Preview {
     LoginView()
         .environment(\.locale, .init(identifier: "en"))
+        .preferredColorScheme(.dark)
 }
